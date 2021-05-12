@@ -58,10 +58,24 @@ Add-NetNatStaticMapping -ExternalIPAddress "0.0.0.0/24" -ExternalPort 22 -Protoc
 Enable sharing on the target folder from the Windows Host and make it allows
 read and write. This shared folder must be created and owned by the adminstrator.
 
-From the Linux guest, Install package `net-fs/cifs-utils` and mount the shared
-folder through the following command as root. Here, the IP address
-`192.168.77.1` is the default gateway.
+From the Linux guest, Install package `net-fs/cifs-utils` with the following USE flags.
+
+```
+net-fs/cifs-utils-6.11::gentoo  USE="pam -acl -ads -caps -creds -systemd"
+```
+
+Mount the shared folder through the following command as root. Here, the IP
+address `192.168.77.1` is the default gateway.
+
 
 ```bash
 mount -t cifs -o rw,noexec,async,nodev,nosuid,uid=emguy,gid=emguy,dir_mode=0755,file_mode=0644,credentials=/root/.smbcred //192.168.77.1/hyperv-share /home/emguy/share
+```
+
+This is the content of the file `/root/.smbcred`
+
+
+```
+username=root
+password=3*****
 ```

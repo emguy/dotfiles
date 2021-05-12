@@ -22,4 +22,7 @@ cp -f $HOME/.tmux.conf $THIS_DIR/home/
 cp -f $HOME/.vimrc $THIS_DIR/home/
 cp -f $HOME/.gitconfig $THIS_DIR/home/
 
+mkdir -p $THIS_DIR/kernel
+cp -f /usr/src/linux/.config $THIS_DIR/kernel/config-$(uname -r)
+
 echo 'All DONE'
