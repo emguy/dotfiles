@@ -1,0 +1,9 @@
+[user]
+	name = Yu Zhang
+	email = emguy2000@gmail.com
+[core]
+	editor = vim
+[papger]
+	branch = false
+[color]
+	ui = true

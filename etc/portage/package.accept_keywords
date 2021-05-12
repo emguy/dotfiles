@@ -1,0 +1,7 @@
+net-libs/nodejs ~amd64
+app-editors/neovim ~amd64
+dev-libs/msgpack ~amd64
+dev-libs/unibilium ~amd64
+app-shells/fzf ~amd64
+dev-python/pynvim ~amd64
+sys-apps/bat ~amd64
