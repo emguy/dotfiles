@@ -51,7 +51,7 @@ dns_servers_eth0="192.168.0.1 8.8.8.8"
 
 ### Port Forwarding
 ```powershell
-Add-NetNatStaticMapping -ExternalIPAddress "0.0.0.0/24" -ExternalPort 22 -Protocol TCP -InternalIPAddress "192.168.77.2" -InternalPort 22 -NatName nat-network
+Add-NetNatStaticMapping -ExternalIPAddress "0.0.0.0/24" -ExternalPort 22 -Protocol TCP -InternalIPAddress "192.168.77.2" -InternalPort 22 -NatName "nat-network"
 ```
 
 ## Hyper-V Shared Folder
