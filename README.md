@@ -9,6 +9,9 @@ Execute archive.sh to backup all configuration files.
 192.168.77.1  Default GW
 192.168.77.2  Gentoo64
 
+(100.190.0.1)
+(100.190.0.2)
+
 ### Port Forwarding
 22 (nat-network) -> 192.168.77.2:22 TCP
 

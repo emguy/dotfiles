@@ -1,3 +1,4 @@
-config_eth0="192.168.77.2/24"
-routes_eth0="default via 192.168.77.1"
-dns_servers_eth0="192.168.0.1 8.8.8.8"
+config_eth0="100.109.0.2/24"
+routes_eth0="default via 100.109.0.1"
+dns_domain_eth0="hitronhub.home"
+dns_servers_eth0="193.181.14.11 193.181.14.12 193.101.14.10 102.168.0.1"

@@ -64,6 +64,7 @@ autocmd BufRead,BufNewFile *.m4 :set syntax=sh
 autocmd BufRead,BufNewFile *presubmit :set syntax=Jenkinsfile
 autocmd BufRead,BufNewFile *postsubmit :set syntax=Jenkinsfile
 
+autocmd BufRead,BufNewFile *.json :set conceallevel=0
 
 "--------------------------
 " NERDTree

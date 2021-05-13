@@ -23,17 +23,13 @@
 #       documentation for details on setting a label. To obtain the UUID, use
 #       the blkid(8) command.
 
+#LABEL=boot		/boot		ext4		noauto,noatime	1 2
 #UUID=58e72203-57d1-4497-81ad-97655bd56494		/		ext4		noatime		0 1
 #LABEL=swap		none		swap		sw		0 0
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
+/dev/sda1   /boot             vfat          defaults 0 2
+/dev/sda2   /                 ext4          noauto,noatime 0 1
+/dev/sdb1   /home             ext4          defaults 0 2
 
-
-
-/dev/sda1      /boot     vfat     defaults        0 2
-/dev/sda2      /         ext4     noauto,noatime  0 1
-/dev/sdb1      /home     ext4     defaults        0 2
-
-
-# network mount
-//192.168.77.1/hyperv-share   /home/emguy/share   cifs    rw,noexec,async,nodev,nosuid,uid=emguy,gid=emguy,dir_mode=0755,file_mode=0644,credentials=/root/.smbcred     0 0
+#//100.109.0.1/hyperv-share      /home/emguy/share     cifs    rw,async,noexec,uid=emguy,gid=emguy,dir_mode=0755,file_mode=0644,credentials=/root/.smbcred      0 0

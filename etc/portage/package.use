@@ -1,2 +1,14 @@
-net-fs/cifs -ads -caps -acl
-net-fs/cifs-utils -ads -caps -acl
+net-misc/curl telnet
+dev-libs/libxml2 python
+net-fs/cifs-utils -acl -ads -caps
+sys-kernel/genkernel -firmware
+x11-base/xorg-server minimal -elogind suid
+media-libs/libglvnd X
+
+
+#www-client/google-chrome qt5
+app-text/xmlto text
+x11-libs/gtk+ X
+media-libs/libepoxy X
+x11-libs/cairo X
+
